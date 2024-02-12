@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Din OT';
+  src: url('../../../../fonts/Dinot.otf') format('opentype');
+}
+.page_top{
+  vertical-align: bottom;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5);
+}
+.pseudo{
+  color: #D09100;
+  font-family: Din OT, SansSerif;
+  margin: 5px 10px 0px 0px;
+}
+.doka{
+  margin: 10px 0px 0px 0px;
+}
+ion-content{
+  --background: black;
+  --overlay-color: rgba(0, 0, 0, 0.5);
+}
+.photo{
+  margin-top: -20px;
+  width: 75px;
+  height: 75px;
+}
+.questions{
+  --background: white;
+}
+ion-card-subtitle{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: black;
+  height: 25px;
+}
+.sub_title{
+  margin: 10px 25px 0px 25px;
+  color: white;
+  font-size: smaller;
+  align-items: center;
+}
+ion-card-content{
+  margin: 50px 10px 10px 50px;
+  align-items: center;
+  width: 250px;
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+}
+.status{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.info{
+  margin: 10px 10px 0px 0px;
+  font-size: x-large;
+  font-weight: bold;
+}
+.menu_buttons{
+  display: flex;
+  flex-direction: column;
+}
+.number{
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 45%;
+  background: black;
+  padding: 2px 0px 0px 0px;
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+.answers{
+  --background: transparent;
+}
+.ans{
+  margin: 0px 0px 0px 8px ;
+}
+ion-button{
+  --background: #D09100;
+  align-items: start;
+  font-family: Din OT, SansSerif;
+  font-size: large;
+  color: black;
+}
+.footer_menu_buttons{
+  display: flex;
+  flex-direction: row;
+  font-size: 1px !important;
+}
+.valider{
+  --background: #CD6403;
+  color: white;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.affrep{
+  --background: #164E02;
+  color: white;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.quit{
+  --background: #752005;
+  color: white;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.page_bottom{
+  vertical-align: bottom;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

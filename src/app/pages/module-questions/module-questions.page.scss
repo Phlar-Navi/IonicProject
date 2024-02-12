@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Din OT';
+  src: url('../../../../fonts/Dinot.otf') format('opentype');
+}
+.sphynx{
+  margin-left: 25%;
+  width: 175px;
+  height: 235px;
+}
+ion-card{
+  --background: transparent;
+}
+ion-card-title{
+  color: #D09100;
+  margin-left: 20px;
+  font-size: 22px;
+}
+.menu_item{
+  --background: #FFC747;
+  width: 162px;
+  margin: 0px 0px 0px -5px;
+  font-weight: bolder;
+  font-family: Din OT, SansSerif;
+  font-size: smaller;
+  color: black;
+}
+
+.page_bottom{
+  vertical-align: bottom;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+p{
+  font-size: 12px;
+}

@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [scrollEvents]="false" [fullscreen]="true">
+  <div class="container">
+    <form [formGroup]="form_Validator" (ngSubmit)="onSubmit()">
+
+      <ion-text> E-mail </ion-text>
+      <ion-input type="email" formControlName="email"></ion-input>
+      <div class="error_alert" *ngIf="form_Validator.get('email')!.hasError('required') && form_Validator.get('email')!.touched"> Une adresse e-mail est requise </div>
+      <div class="error_alert" *ngIf="form_Validator.get('email')!.hasError('pattern') && form_Validator.get('email')!.touched"> L'adresse e-mail n'est pas valide </div>
+
+      <ion-text> Mot de passe </ion-text>
+      <ion-input type="password" formControlName="pwd"></ion-input>
+      <div class="error_alert" *ngIf="form_Validator.get('pwd')!.hasError('required') && form_Validator.get('pwd')!.touched"> Un mot de passe d'au moins 6 caractères est requis </div>
+      <div class="error_alert" *ngIf="form_Validator.get('pwd')!.hasError('minLength') && form_Validator.get('pwd')!.touched"> Le mot de passe doit contenir 6 caractères au moins </div>
+
+      <ion-text class="profile_label"> Photo de profil </ion-text>
+      <ion-avatar>
+        <img src="../../../assets/images/a6f8716cabc60ac1de36e39ed3723c39.jpg">
+      </ion-avatar>
+
+      <ion-button size="small" strong="true" class="valid" type="submit" [disabled]="!form_Validator.valid"> Valider </ion-button>
+    </form>
+
+  </div>
+</ion-content>
+
+  <ion-footer>
+    <div class="page_bottom">
+      <p>Un jeu basé sur les enseignements de l’école KIMUNTU</p>
+      <img src="assets/images/kmt_logo.png" width="25px" height="25px">
+    </div>
+  </ion-footer>
+

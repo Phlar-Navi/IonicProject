@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Din OT';
+  src: url('../../../../fonts/Dinot.otf') format('opentype');
+}
+ion-content{
+  --background: url('../../../assets/images/b2cde9deb25d98fa80e73f3427164b4c.jpg') no-repeat center center / cover;
+}
+.menu_content{
+  padding-top: 275px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+ion-card{
+  --background: transparent;
+}
+ion-card-title{
+  color: #D09100;
+  margin-left: 72px;
+  font-size: 18px;
+}
+.menu_buttons{
+  display: flex;
+  flex-direction: column;
+}
+.menu_item{
+  --background: #FFFFFF;
+  width: 152px;
+  margin-left: 100px;
+  font-weight: 600;
+  font-family: Din OT, SansSerif;
+  font-size: large;
+  color: black;
+}
+.page_bottom{
+  vertical-align: bottom;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5);
+}
+p{
+  font-size: 12px;
+}
